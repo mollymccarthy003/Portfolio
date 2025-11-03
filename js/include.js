@@ -1,16 +1,13 @@
-// Load header and footer on every page that includes this script
 document.addEventListener("DOMContentLoaded", function () {
-    // Header
+    // Load header
     fetch("header.html")
         .then(response => response.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-        });
+        .then(data => document.getElementById("header").innerHTML = data)
+        .catch(err => console.error(err));
 
-    // Footer
+    // Load footer
     fetch("footer.html")
         .then(response => response.text())
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        });
+        .then(data => document.getElementById("footer").innerHTML = data)
+        .catch(err => console.error(err));
 });
