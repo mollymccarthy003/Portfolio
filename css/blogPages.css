@@ -131,3 +131,10 @@ footer {
 .blog-card a:hover {
     color: #667eea;
 }
+.blog-image {
+    max-width: 35%; /* scale to container */
+    height: auto;    /* maintain aspect ratio */
+    display: block;
+    margin: 20px auto; /* center with space */
+    border-radius: 8px; /* optional rounded corners */
+}
